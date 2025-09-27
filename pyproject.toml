@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "metaProtease"
+version = "0.1.0"
+description = "A pipeline for the identification of protease genes from metagenome data"
+authors = [{ name = "Yang Chen", email = "yac027@ucsd.edu" }]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+metaProtease = "metaProtease.cli:main"
+

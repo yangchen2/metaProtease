@@ -1,0 +1,16 @@
+name: metaProtease
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  # Core Python
+  - python=3.10
+  - pip
+
+  # External tools
+  - bowtie2
+  - samtools
+
+  - pip:
+     - -e .
