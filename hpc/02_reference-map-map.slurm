@@ -14,7 +14,6 @@ FASTQ_DIR=/qmounts/qiita_data/per_sample_FASTQ/193232
 INDEX_DIR=/home/yac027/metaProtease/outputs/reference-map/index
 OUTDIR=../outputs/reference-map
 
-# Get R1 FASTQs
 FASTQS=($(ls ${FASTQ_DIR}/*_R1*.fastq.gz | sort))
 R1=${FASTQS[$SLURM_ARRAY_TASK_ID]}
 R2=${R1/_R1/_R2}
