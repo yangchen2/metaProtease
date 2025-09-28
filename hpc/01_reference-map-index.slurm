@@ -9,7 +9,7 @@
 #SBATCH --mail-user=yac027@ucsd.edu
 #SBATCH --mail-type=END,FAIL
 
-FASTA=/home/yac027/Gallo_projs/gallo_AD_peds/protease_mining/fasta/strep_proteases.fasta
+FASTA=/home/yac027/Gallo_projs/gallo_AD_peds/protease_mining/fasta/strep_proteases_renamed.fasta
 OUTDIR=../outputs/reference-map # Needs to exist all the way down to slurm_out
 
 source activate metaProtease
