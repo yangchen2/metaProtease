@@ -11,6 +11,7 @@ dependencies:
   # External tools
   - bowtie2
   - samtools
+  - mafft
 
   - pip:
      - -e .

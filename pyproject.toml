@@ -16,3 +16,5 @@ dependencies = []
 metaProtease = "metaProtease.cli:main"
 reference-map = "metaProtease.reference_map:main"
 
+[tool.setuptools]
+packages = ["metaProtease"]
