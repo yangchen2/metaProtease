@@ -13,6 +13,8 @@ dependencies:
   - samtools
   - mafft
   - fasttree 
+  - subread
+  - biopython
 
   - pip:
      - -e .
