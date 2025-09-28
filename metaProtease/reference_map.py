@@ -89,14 +89,21 @@ class ReferenceMapper:
             return sam_file
 
         self.logger.info(f"Mapping sample {sample_name} → {sam_file}")
+        
         cmd = [
-            "bowtie2",
-            "--score-min", self.score_min,
-            "-x", index_prefix,
-            "-1", r1,
-            "-2", r2,
-            "-S", sam_file,
-            "-p", str(self.threads)
+            "bowtie2", 
+             "--no-exact-upfront",           # disable shortcut for exact matches (force full alignment)
+             "--no-1mm-upfront",             # disable shortcut for 1-mismatch matches (force full alignment)
+             "--score-min", self.score_min,  # set minimum alignment score threshold (90% here)
+             "-x", index_prefix,             # path prefix to the Bowtie2 reference index
+             "-1", r1,                       # FASTQ file for read 1 (paired-end)
+             "-2", r2,                       # FASTQ file for read 2 (paired-end)
+             "-S", sam_file,                 # output SAM file path
+             "-p", str(self.threads),        # number of threads to use
+             "--no-unal",                    # don’t write unmapped reads into the SAM file
+             "--very-sensitive",             # use Bowtie2's most sensitive preset (slower, but thorough)
+             "--seed", "42",                 # set random seed for reproducibility
+             "-k", "16"                      # report up to 16 valid alignments per read (multi-mapping)
         ]
         self.run_command(cmd)
 
