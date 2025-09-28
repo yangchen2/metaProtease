@@ -12,6 +12,7 @@ dependencies:
   - bowtie2
   - samtools
   - mafft
+  - fasttree 
 
   - pip:
      - -e .
