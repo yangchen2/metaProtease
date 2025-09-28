@@ -15,6 +15,7 @@ dependencies = []
 [project.scripts]
 metaProtease = "metaProtease.cli:main"
 reference-map = "metaProtease.reference_map:main"
+reference-count = "metaProtease.reference_count:main"
 
 [tool.setuptools]
 packages = ["metaProtease"]
