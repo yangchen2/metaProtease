@@ -1,0 +1,83 @@
+sample_name	sex	age_months	subject_id	microbiome_type	ad_status	lesion_status
+72.S1.L005	M	5	1	human_skin	healthy	NL
+73.S2.L005	M	5	1	human_skin	healthy	NL
+76.S4.L005	F	2	2	human_skin	healthy	NL
+78.S5.L005	F	2	2	human_skin	healthy	NL
+79.S6.L005	F	2	2	human_skin	healthy	NL
+82.S8.L005	F	4	3	human_skin	healthy	NL
+84.S9.L005	F	4	3	human_skin	healthy	NL
+85.S10.L005	F	4	3	human_skin	healthy	NL
+88.S12.L005	F	2	4	human_skin	healthy	NL
+90.S13.L005	F	2	4	human_skin	healthy	NL
+91.S14.L005	F	2	4	human_skin	healthy	NL
+96.S16.L005	F	5	5	human_skin	ad_pos	NL
+100.S17.L006	F	4	6	human_skin	ad_pos	NL
+101.S18.L005	F	4	6	human_skin	ad_pos	NL
+102.S19.L005	F	4	6	human_skin	ad_pos	NL
+110.S20.L005	M	156	9	human_skin	ad_pos	L
+112.S21.L005	M	156	9	human_skin	ad_pos	L
+114.S22.L005	M	156	9	human_skin	ad_pos	NL
+115.S23.L005	M	17	10	human_skin	ad_pos	NL
+117.S24.L005	M	17	10	human_skin	ad_pos	L
+120.S25.L005	F	10	11	human_skin	healthy	NL
+123.S26.L005	M	5	12	human_skin	ad_pos	NL
+124.S27.L005	M	5	12	human_skin	ad_pos	NL
+135.S28.L005	M	18	15	human_skin	ad_pos	NL
+136.S29.L005	M	18	15	human_skin	ad_pos	NL
+151.S30.L005	M	10	18	human_skin	ad_pos	L
+157.S31.L005	M	4	20	human_skin	ad_pos	NL
+159.S32.L005	M	3	21	human_skin	ad_pos	NL
+160.S33.L005	M	3	21	human_skin	ad_pos	NL
+161.S34.L005	M	3	21	human_skin	ad_pos	L
+162.S35.L005	M	8	22	human_skin	ad_pos	NL
+163.S36.L005	M	8	22	human_skin	ad_pos	NL
+165.S37.L005	M	9	23	human_skin	ad_pos	NL
+166.S38.L005	M	9	23	human_skin	ad_pos	L
+167.S39.L005	M	9	23	human_skin	ad_pos	L
+168.S40.L005	M	9	23	human_skin	ad_pos	NL
+169.S41.L005	F	5	24	human_skin	ad_pos	L
+170.S42.L005	F	5	24	human_skin	ad_pos	L
+172.S43.L005	M	5	25	human_skin	ad_pos	L
+173.S44.L005	M	5	25	human_skin	ad_pos	NL
+174.S45.L005	M	5	25	human_skin	ad_pos	L
+176.S46.L005	M	3	26	human_skin	ad_pos	L
+177.S47.L005	M	3	26	human_skin	ad_pos	L
+178.S48.L005	M	3	26	human_skin	ad_pos	L
+181.S50.L005	M	4	27	human_skin	ad_pos	NL
+182.S51.L005	M	4	27	human_skin	ad_pos	NL
+184.S53.L005	M	7	28	human_skin	ad_pos	NL
+185.S54.L005	M	7	28	human_skin	ad_pos	NL
+186.S55.L005	M	7	28	human oral metagenome	ad_pos	L
+186.S55.L006	M	7	28	human oral metagenome	healthy	L
+187.S56.L005	M	6	29	human_skin	healthy	NL
+188.S57.L005	M	6	29	human_skin	healthy	NL
+189.S58.L005	M	6	29	human_skin	healthy	NL
+190.S59.L005	M	6	29	human oral metagenome	healthy	NL
+191.S60.L005	F	3	30	human_skin	ad_pos	NL
+192.S61.L005	F	3	30	human_skin	ad_pos	NL
+193.S62.L005	F	3	30	human_skin	ad_pos	L
+194.S63.L005	F	3	30	human_skin	ad_pos	NL
+195.S64.L005	F	3	30	human oral metagenome	ad_pos	NL
+196.S65.L005	F	2	31	human_skin	healthy	NL
+197.S66.L005	F	2	31	human oral metagenome	healthy	NL
+198.S67.L005	F	2	31	human_skin	healthy	NL
+199.S68.L005	F	2	31	human_skin	healthy	NL
+200.S69.L005	M	7	32	human_skin	ad_pos	L
+201.S70.L005	M	7	32	human_skin	ad_pos	L
+202.S71.L005	M	7	32	human_skin	ad_pos	L
+203.S72.L005	M	7	32	human_skin	ad_pos	L
+204.S73.L005	M	7	32	human_skin	ad_pos	L
+205.S74.L005	M	7	32	human_skin	ad_pos	L
+206.S75.L005	M	7	32	human_skin	ad_pos	L
+207.S76.L005	M	7	32	human_skin	ad_pos	L
+208.S77.L005	F	3	33	human_skin	healthy	NL
+209.S78.L005	F	3	33	human_skin	healthy	NL
+210.S79.L005	F	3	33	human oral metagenome	healthy	NL
+211.S80.L005	F	3	33	human_skin	healthy	NL
+212.S81.L005	M	36	34	human_skin	healthy	NL
+213.S82.L005	M	36	34	human oral metagenome	healthy	NL
+214.S83.L005	M	36	34	human_skin	healthy	NL
+215.S84.L005	M	24	35	human_skin	healthy	NL
+216.S85.L005	M	24	35	human_skin	healthy	NL
+217.S86.L005	M	24	35	human oral metagenome	healthy	NL
+218.S87.L005		2	35	human_skin	healthy	NL
