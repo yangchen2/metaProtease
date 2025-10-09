@@ -5,7 +5,7 @@ library(ggrepel)
 library(readr)
 
 # Read PCA loadings
-loadings <- read_tsv("pca_feature_loadings.tsv", show_col_types = FALSE)
+loadings <- read_tsv("../../outputs/reference-map/pca/pca_feature_loadings.tsv", show_col_types = FALSE)
 
 # Extract species name (text before first "|")
 loadings <- loadings %>%
@@ -51,5 +51,5 @@ p <- ggplot(species_loadings, aes(x = PC1, y = PC2)) +
 
 # === Save plot as high-resolution PNG ===
 ggsave("../../figures/species_loadings.png", plot = p, width = 8, height = 8, dpi = 600)
-cat("Species loadings plot saved as 'species_loadings.png' (600 DPI)\n")
+cat("Species loadings plot saved as '../../figures/species_loadings.png' (600 DPI)\n")
 

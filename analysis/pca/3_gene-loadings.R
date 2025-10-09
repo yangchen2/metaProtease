@@ -5,7 +5,7 @@ library(ggrepel)
 library(readr)
 
 # Read PCA loadings
-loadings <- read_tsv("pca_feature_loadings.tsv", show_col_types = FALSE)
+loadings <- read_tsv("../../outputs/reference-map/pca/pca_feature_loadings.tsv", show_col_types = FALSE)
 
 # Extract gene function annotation (text after first "|")
 loadings <- loadings %>%
@@ -79,5 +79,5 @@ p <- ggplot(function_loadings, aes(x = PC1, y = PC2)) +
 
 # Save PNG
 ggsave("../../figures/gene_type_loadings.png", p, width = 8, height = 8, dpi = 600)
-cat("Functional gene type PCA loadings plot saved as 'gene_type_loadings.png' (600 DPI)\n")
+cat("Functional gene type PCA loadings plot saved as '../../figures/gene_type_loadings.png' (600 DPI)\n")
 
