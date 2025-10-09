@@ -65,7 +65,7 @@ cat("Overlap samples:", sum(rownames(pca_df) %in% rownames(meta_subset)), "\n")
 pca_df <- cbind(pca_df, meta_subset[rownames(pca_df), ])
 
 # Save coordinates
-write_tsv(pca_df %>% mutate(sample = rownames(pca_df)), "pca_coordinates.tsv")
+write_tsv(pca_df %>% mutate(sample = rownames(pca_df)), "../../outputs/reference-map/pca/pca_coordinates.tsv")
 
 # === Step 8: Filter for samples with ad_status ===
 pca_df_filtered <- pca_df %>%
@@ -127,18 +127,18 @@ loadings_ranked <- loadings_df %>%
   mutate(abs_PC1 = abs(PC1), abs_PC2 = abs(PC2))
 
 # Save all features
-write_tsv(loadings_ranked, "pca_feature_loadings.tsv")
-cat("All PCA feature loadings saved to 'pca_feature_loadings.tsv'\n")
+write_tsv(loadings_ranked, "../../outputs/reference-map/pca/pca_feature_loadings.tsv")
+cat("All PCA feature loadings saved to '../../outputs/reference-map/pca/pca_feature_loadings.tsv'\n")
 
 # Save sorted by PC1 (descending)
 sorted_PC1 <- loadings_ranked %>%
   arrange(desc(PC1))
-write_tsv(sorted_PC1, "pca_feature_loadings_sorted_by_PC1.tsv")
-cat("PCA feature loadings sorted by PC1 saved to 'pca_feature_loadings_sorted_by_PC1.tsv'\n")
+write_tsv(sorted_PC1, "../../outputs/reference-map/pca/pca_feature_loadings_sorted_by_PC1.tsv")
+cat("PCA feature loadings sorted by PC1 saved to '../../outputs/reference-map/pca/pca_feature_loadings_sorted_by_PC1.tsv'\n")
 
 # Save sorted by PC2 (descending)
 sorted_PC2 <- loadings_ranked %>%
   arrange(desc(PC2))
-write_tsv(sorted_PC2, "pca_feature_loadings_sorted_by_PC2.tsv")
-cat("PCA feature loadings sorted by PC2 saved to 'pca_feature_loadings_sorted_by_PC2.tsv'\n")
+write_tsv(sorted_PC2, "../../outputs/reference-map/pca/pca_feature_loadings_sorted_by_PC2.tsv")
+cat("PCA feature loadings sorted by PC2 saved to '../../outputs/reference-map/pca/pca_feature_loadings_sorted_by_PC2.tsv'\n")
 
