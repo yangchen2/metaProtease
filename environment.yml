@@ -15,6 +15,13 @@ dependencies:
   - fasttree 
   - subread
   - biopython
-
+  
+  # R packages
+  - r-base
+  - r-ggplot2
+  - r-readr
+  - r-dplyr
+  - r-ggrepel
+  
   - pip:
      - -e .
