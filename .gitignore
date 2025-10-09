@@ -208,3 +208,6 @@ __marimo__/
 
 # metaProtease created output directory
 outputs/
+
+# Figures directory
+figures/
