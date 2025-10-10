@@ -26,7 +26,7 @@ fi
 source activate metaProtease
 
 echo "[$SLURM_ARRAY_TASK_ID] Mapping $R1 and $R2"
-reference-map map \
+metaProtease reference-map map \
   --r1 "$R1" \
   --r2 "$R2" \
   --index-dir "$INDEX_DIR" \
