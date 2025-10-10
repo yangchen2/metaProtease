@@ -15,6 +15,7 @@ dependencies:
   - fasttree 
   - subread
   - biopython
+  - woltka
   
   # R packages
   - r-base
