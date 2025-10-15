@@ -211,3 +211,6 @@ outputs/
 
 # Figures directory
 figures/
+
+# Analysis directory
+analysis/
