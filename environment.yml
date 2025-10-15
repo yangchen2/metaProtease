@@ -23,6 +23,11 @@ dependencies:
   - r-readr
   - r-dplyr
   - r-ggrepel
+
+  # R phylogenetics and viz
+  - r-ape
+  - bioconductor-treeio
+  - bioconductor-ggtree
   
   - pip:
      - -e .
