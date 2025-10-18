@@ -3,12 +3,14 @@
 #SBATCH --output=../outputs/reference-map/slurm_out/%x_%A_%a.out
 #SBATCH --error=../outputs/reference-map/slurm_out/%x_%A_%a.err
 #SBATCH --cpus-per-task=4
-#SBATCH --time=04:00:00
-#SBATCH --mem=16G
+#SBATCH --time=08:00:00
+#SBATCH --mem=32G
 #SBATCH --partition=highmem
 #SBATCH --array=0-86
 #SBATCH --mail-user=yac027@ucsd.edu
 #SBATCH --mail-type=END,FAIL
+
+source ~/.bashrc
 
 FASTQ_DIR=/qmounts/qiita_data/per_sample_FASTQ/193232
 INDEX_DIR=/home/yac027/metaProtease/outputs/reference-map/index
@@ -29,8 +31,10 @@ echo "[$SLURM_ARRAY_TASK_ID] Mapping $R1 and $R2"
 metaProtease reference-map map \
   --r1 "$R1" \
   --r2 "$R2" \
-  --index-dir "$INDEX_DIR" \
+  --index-path "$INDEX_DIR/reference" \
   --outdir "$OUTDIR" \
-  --threads $SLURM_CPUS_PER_TASK
+  --threads $SLURM_CPUS_PER_TASK \
+  --force
 
-echo "Finished!"
+echo "[$(date)] [Task ${SLURM_ARRAY_TASK_ID}] Completed mapping $R1 and $R2"
+
